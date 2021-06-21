@@ -1,0 +1,133 @@
+/* Colores */
+.morado {
+	background-color: hsl(263, 55%, 52%);
+	color: hsl(210, 46%, 95%);
+}
+
+.blanco {
+	background-color: hsl(0, 0%, 100%);
+	color: #48556a;
+}
+
+.gris {
+	background-color: hsl(217, 19%, 35%);
+	color: hsl(210, 46%, 95%);
+}
+
+.azul-oscuro {
+	background-color: hsl(219, 29%, 14%);
+	color: hsl(210, 46%, 95%);
+}
+
+
+
+/* Fondo */
+body {
+	background-color: #ecf2f8;
+}
+
+/* Carta */
+.carta {
+	box-shadow: 4rem 5rem 2.5rem -3rem rgba(72,85,106,.2);
+	transition: transform .5s ease;
+	padding: 2.5rem 3rem;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.carta:hover {
+	transform: scale(1.05);
+}
+
+.carta.fondo-cita {
+	background-image: url('./../images/bg-pattern-quotation.svg');
+	background-position: top 0 right 18%;
+	background-repeat: no-repeat;
+}
+
+.carta.alta {
+	grid-row: span 2 / auto;
+}
+
+.carta.ancha {
+	grid-column: span 2 / auto;
+}
+
+.contenido {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	overflow: hidden;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.contenido > * {
+	width: 100%;
+}
+
+.informacion {
+	display: flex;
+	margin-bottom: 1.5rem;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.informacion img {
+	border: 1px solid #DDD;
+	margin-right: 1.5rem;
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+}
+
+.quien-es {
+	width: 100%;
+	display: flex;
+	font-size: 120%;
+	flex-direction: column;
+}
+
+.quien-es > * {
+	height: 50%;
+}
+
+.quien-es .nombre {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+.quien-es .verificado {
+	display: flex;
+	align-items: flex-start;
+	justify-content: start;
+	flex-direction: column;
+	font-weight: 10%;
+	opacity: .5;
+}
+
+
+
+.texto {
+	display: flex;
+	font-size: 100%;
+	flex-direction: column;
+}
+
+.titulo {
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+	line-height: 1.2;
+	font-size: 2rem;
+}
+
+blockquote {
+	font-size: 1.3rem;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-bottom: 0;
+}
